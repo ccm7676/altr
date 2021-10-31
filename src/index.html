@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Altr</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="toolbar-container">
+    <a class="downloader"></a>
+    <a class="save-btn">Save</a>
+      <div class="select-container"><select class="canvas-selector"></select></div>
+    <div class="toolbar">
+      <svg class="add-button" width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="19.5831" y="0.849243" width="3.98044" height="41.5735" rx="1.99022" fill="#ffffff" />
+        <rect x="0.786621" y="23.6262" width="3.98044" height="41.5735" rx="1.99022"
+          transform="rotate(-90 0.786621 23.6262)" fill="#ffffff" />
+      </svg>
+
+      <svg class="pen" width="72" height="70" viewBox="0 0 72 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60.3107 0.990845L10.9544 48.6472L22.3869 59.6859L71.7431 12.0295L60.3107 0.990845Z" fill="#ffffff" />
+        <path d="M6.77342 63.6864L20.2138 60.9953L9.56053 50.7089L6.77342 63.6864Z" fill="#ffffff" />
+      </svg>
+
+      <svg class="eraser" width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.7831 32.5674L29.7454 49.5298L22.4786 56.7966C21.3071 57.9681 19.4076 57.9681 18.236 56.7966L5.51627 44.0768C4.3447 42.9053 4.3447 41.0058 5.51627 39.8342L12.7831 32.5674ZM12.7831 29.739L12.7831 29.739L38.5672 3.95484C40.5199 2.00222 43.6857 2.00222 45.6383 3.95484L58.358 16.6746C60.3106 18.6272 60.3106 21.793 58.358 23.7456L32.5739 49.5298L32.5739 49.5298L31.1596 50.944L23.8929 58.2108C21.9402 60.1634 18.7744 60.1634 16.8218 58.2108L4.10206 45.4911C2.14944 43.5384 2.14944 40.3726 4.10206 38.42L11.3688 31.1532L12.7831 29.739Z"
+          fill="#ffffff" />
+      </svg>
+
+      <svg class="trash" width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.141602" y="7.80798" width="35.2345" height="2.25181" rx="1.12591" fill="#ffffff" />
+        <path
+          d="M11.7919 7.808V2.1236C11.7919 1.57131 12.2396 1.1236 12.7919 1.1236H22.7258C23.2781 1.1236 23.7258 1.57131 23.7258 2.1236V7.808"
+          stroke="#ffffff" stroke-width="2" />
+        <path
+          d="M5.30655 9.9339H30.2111V34.3725C30.2111 36.5816 28.4203 38.3725 26.2111 38.3725H9.30655C7.09741 38.3725 5.30655 36.5816 5.30655 34.3725V9.9339Z"
+          stroke="#ffffff" stroke-width="2" />
+        <rect x="9.1438" y="15.7503" width="2.31379" height="15.6046" rx="1.15689" fill="#ffffff" />
+        <rect x="16.6019" y="15.7503" width="2.31379" height="15.6046" rx="1.15689" fill="#ffffff" />
+        <rect x="24.0601" y="15.7503" width="2.31379" height="15.6046" rx="1.15689" fill="#ffffff" />
+      </svg>
+
+
+
+
+
+      <svg class="stroke-icon" width="70" height="60" viewBox="0 0 70 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.0874023" y="0.990845" width="69.8556" height="19.1335" fill="#ffffff" />
+        <rect x="0.0874023" y="26.4781" width="69.8556" height="12.1242" fill="#ffffff" />
+        <rect x="0.0874023" y="44.9563" width="69.8556" height="5.55068" fill="#ffffff" />
+        <rect x="0.0874023" y="56.861" width="69.8556" height="2.31857" fill="#ffffff" />
+      </svg>
+
+      <div class="color-selector"><input type="color"></div>
+
+    </div>
+    
+
+    
+    </div>
+
+    <div class="stroke-selector">
+      <input type="range" value="3" class="slider">
+      <div class="stroke-example"></div>
+    </div>
+    <div class="create-menu">
+      <h1 class="size-txt">Size</h1><br>
+      <input type="number" placeholder="width(px)" class="width-inp text-inp">
+      <input type="number" placeholder="height(px)" class="height-inp  text-inp"><br><br>
+      <h1 class="bgcolor-txt">Background Color</h1>
+      <input type="color" value="#ffffff" class="bg-color-picker"><br><br>
+      <h1 class="bgimg-txt">Background Image</h1><br>
+      <label class="label">
+        <input type="file" class="file-inp" />
+        <span>Select a file</span>
+      </label>
+      <button class="create-btn">Create</button>
+
+
+      <canvas class="canvas0"></canvas>
+
+     
+ 
+  <script src="js/anotate.js"></script>
+</body>
+
+</html>
